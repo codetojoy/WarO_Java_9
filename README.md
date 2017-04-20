@@ -9,14 +9,14 @@ written without modules in mind.
 * waro.base
     * requires Spring "automatic modules"
     * exports several utility packages
-    * see [module-info.java]
+    * see [module-info.java](https://github.com/codetojoy/WarO_Java_9/blob/master/waro.base/src/main/java/waro.base/module-info.java)
 * waro.function
     * requires `waro.base` and Guava automatic module
     * exports functional packages 
-    * see [module-info.java]
+    * see [module-info.java](https://github.com/codetojoy/WarO_Java_9/blob/master/waro.function/src/main/java/waro.function/module-info.java)
 * waro.main
     * requires `waro.base` and `waro.function`
-    * see [module-info.java]
+    * see [module-info.java](https://github.com/codetojoy/WarO_Java_9/blob/master/waro.main/src/main/java/waro.main/module-info.java)
 
 ### Set Up Instructions 
 
