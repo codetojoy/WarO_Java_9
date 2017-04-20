@@ -1,0 +1,35 @@
+apply plugin: 'java'
+
+dependencies {
+    compile 'com.google.guava:guava:18.0'
+    compile 'org.springframework:spring-context:4.1.5.RELEASE'
+    compile 'junit:junit:4.11'
+}
+
+repositories { 
+    jcenter() 
+}
+
+task downloadJars(type: Copy) {
+    from sourceSets.main.runtimeClasspath
+    into 'jars/'
+}
+
+task prepare(dependsOn: 'downloadJars') {
+    doLast {
+        ant.mkdir(dir: "mjars")
+
+        ant.copy(file: "jars/spring-core-4.1.5.RELEASE.jar", 
+                 tofile: "mjars/spring.core@4.1.5.jar")
+
+        ant.copy(file: "jars/spring-context-4.1.5.RELEASE.jar",
+                 tofile: "mjars/spring.context@4.1.5.jar")
+
+        ant.copy(file: "jars/spring-beans-4.1.5.RELEASE.jar",
+                 tofile: "mjars/spring.beans@4.1.5.jar")
+
+        ant.copy(file: "jars/guava-18.0.jar",
+                 tofile: "mjars/guava@18.0.jar")
+    }
+}
+
