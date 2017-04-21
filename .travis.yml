@@ -10,7 +10,7 @@ before_install:
     - gunzip jdk-9-ea+166_linux-x86_bin.tar.gz
     - tar xvf jdk-9-ea+166_linux-x86_bin.tar
     - ls -lrt
-    - export JAVA_HOME=$PWD/jdk-9-ea+166_linux-86_bin
+    - export JAVA_HOME=$PWD/jdk-9
     - export PATH=$JAVA_HOME/bin:$PATH
     - export JAVA_OPTS="--permit-illegal-access"
     - wget http://services.gradle.org/distributions/gradle-2.14.1-bin.zip
