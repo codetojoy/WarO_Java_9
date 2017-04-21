@@ -1,0 +1,18 @@
+language: java
+sudo: false
+dist: trusty
+
+addons:
+  apt:
+    packages:
+      - oracle-java9-installer
+
+jdk: oraclejdk9
+
+install:
+- gradle prepare
+- chmod u+x build.sh
+- ./build.sh
+- chmod u+x test.sh
+- ./test.sh
+
