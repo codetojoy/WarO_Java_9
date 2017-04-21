@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/codetojoy/WarO_Java_9.svg?branch=master)](https://travis-ci.org/codetojoy/WarO_Java_9)
+
 ### WarO_Java_9
 
 WarO is a code kata based on a simple card game. Rules are documented [here](https://github.com/peidevs/WarO_Java/blob/master/README.md).
