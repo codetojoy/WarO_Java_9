@@ -1,5 +1,6 @@
 
 JARS=$PWD/jars
+MJARS=$PWD/mjars
 LIB=$PWD/mlib 
 
 CLASSPATH=
@@ -7,6 +8,7 @@ CLASSPATH=$CLASSPATH:$PWD/waro.function/test_build
 CLASSPATH=$CLASSPATH:$LIB/waro.base.jar
 CLASSPATH=$CLASSPATH:$LIB/waro.function.jar
 CLASSPATH=$CLASSPATH:$JARS/*
+CLASSPATH=$CLASSPATH:$MJARS/*
 
 cd waro.function
 

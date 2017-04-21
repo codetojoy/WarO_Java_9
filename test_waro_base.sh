@@ -1,8 +1,10 @@
 
 JARS=$PWD/jars
+MJARS=$PWD/mjars
 
 CLASSPATH=$PWD/waro.base/build/waro.base
 CLASSPATH=$CLASSPATH:$JARS/*
+CLASSPATH=$CLASSPATH:$MJARS/*
 CLASSPATH=$CLASSPATH:$PWD/waro.base/test_build
 
 cd waro.base

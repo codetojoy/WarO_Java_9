@@ -34,9 +34,8 @@ docker run --rm -i -t -v $(pwd):/data apr_b161_jdk9
 
 ### Build Instructions 
 
-* outside Docker container:
-    * to prepare jars: `gradle prepare` 
 * inside Docker container:
+    * to prepare jars: `./prepare.sh`
     * to build: `./build.sh`
     * to run tests: build, then `./test.sh`
     * to run app: build, then `./run_waro_main.sh`
