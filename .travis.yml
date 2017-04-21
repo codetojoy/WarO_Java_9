@@ -8,7 +8,8 @@ notifications:
 before_install:
     - wget http://download.java.net/java/jdk9/archive/166/binaries/jdk-9-ea+166_linux-x86_bin.tar.gz
     - gunzip jdk-9-ea+166_linux-x86_bin.tar.gz
-    - tar xf jdk-9-ea+166_linux-x86_bin.tar
+    - tar xvf jdk-9-ea+166_linux-x86_bin.tar
+    - ls -lrt
     - export JAVA_HOME=$PWD/jdk-9-ea+166_linux-86_bin
     - export PATH=$JAVA_HOME/bin:$PATH
     - export JAVA_OPTS="--permit-illegal-access"
