@@ -20,8 +20,9 @@ before_install:
     - export PATH=$GRADLE_HOME/bin:$PATH
 
 install:
-- export JAVA_OPTS="--permit-illegal-access"
+- export GRADLE_OPTS="--permit-illegal-access"
 - java -version
+- gradle -version
 - gradle prepare 
 - chmod u+x build.sh
 - ./build.sh
