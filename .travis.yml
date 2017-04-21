@@ -19,7 +19,7 @@ before_install:
     - export PATH=$GRADLE_HOME/bin:$PATH
 
 install:
-- gradle prepare
+- gradle --stacktrace prepare
 - chmod u+x build.sh
 - ./build.sh
 - chmod u+x test.sh
