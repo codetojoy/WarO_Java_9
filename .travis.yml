@@ -5,21 +5,22 @@ dist: trusty
 notifications:
     email: false
 
+jdk:
+  - oraclejdk9
+
+addons:
+  apt:
+    packages:
+      - oracle-java9-installer
+
 before_install:
-    - wget http://download.java.net/java/jdk9/archive/166/binaries/jdk-9-ea+166_linux-x86_bin.tar.gz
-    - gunzip jdk-9-ea+166_linux-x86_bin.tar.gz
-    - tar xvf jdk-9-ea+166_linux-x86_bin.tar
-    - ls -lrt
-    - export JAVA_HOME=$PWD/jdk-9
-    - export PATH=$JAVA_HOME/bin:$PATH
-    - export JAVA_OPTS="--permit-illegal-access"
     - wget http://services.gradle.org/distributions/gradle-2.14.1-bin.zip
     - unzip gradle-2.14.1-bin.zip
     - export GRADLE_HOME=$PWD/gradle-2.14.1
     - export PATH=$GRADLE_HOME/bin:$PATH
 
 install:
-- chmod u+x $JAVA_HOME/bin/java
+- export JAVA_OPTS="--permit-illegal-access"
 - java -version
 - gradle prepare 
 - chmod u+x build.sh
