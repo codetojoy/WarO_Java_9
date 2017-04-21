@@ -19,6 +19,7 @@ before_install:
     - export PATH=$GRADLE_HOME/bin:$PATH
 
 install:
+- chmod u+x $JAVA_HOME/bin/java
 - java -version
 - gradle prepare 
 - chmod u+x build.sh
