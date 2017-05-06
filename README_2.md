@@ -6,5 +6,6 @@
 
 ### confirmation
 
-* 05-MAY-2017 , confirmed with b167 via sdkman
+*  05-MAY-2017 : confirmed with b167 via sdkman
+*  05-MAY-2017 : confirmed with b168 via automenta/javai Docker image
 
