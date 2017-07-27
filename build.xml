@@ -1,4 +1,5 @@
 <project>
+<!-- build tickle -->
 <target name="test">
     <echo message="no-op" />
 </target>
