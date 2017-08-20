@@ -35,8 +35,8 @@ written without modules in mind.
 
 <pre>
 cd $MY_SRC_HOME
-docker build -t="apr_b161_jdk9" . 
-docker run --rm -i -t -v $(pwd):/data apr_b161_jdk9 
+docker build -t="jdk9/waro" . 
+docker run --rm -i -t -v $(pwd):/data jdk9/waro 
 </pre>
 
 ### Build Instructions 
